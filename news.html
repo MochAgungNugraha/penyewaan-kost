@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Berita Kost - Kost Sidoarjo</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <h1>KostSidoarjo</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="locations.html">Lokasi Kost</a></li>
+            <li><a href="news.html" class="active">Berita</a></li>
+            <li><a href="dashboard.html">Login</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="news-hero">
+      <div class="container">
+        <h2>Berita Terkini Seputar Kost di Sidoarjo</h2>
+        <p>
+          Informasi terbaru tentang perkembangan kost, tips, dan panduan untuk
+          penghuni kost
+        </p>
+      </div>
+    </section>
+
+    <section class="news-categories">
+      <div class="container">
+        <div class="categories">
+          <a href="#" class="active">Semua</a>
+          <a href="#">Tips</a>
+          <a href="#">Pengumuman</a>
+          <a href="#">Promo</a>
+          <a href="#">Lokasi Baru</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="news-list">
+      <div class="container">
+        <div class="news-grid">
+          <!-- Berita 1 -->
+          <article class="news-article">
+            <div class="article-image">
+              <img src="images/news1.jpg" alt="Tips Memilih Kost" />
+              <div class="article-category">Tips</div>
+            </div>
+            <div class="article-content">
+              <div class="article-meta">
+                <span><i class="far fa-calendar-alt"></i> 15 Juli 2023</span>
+                <span><i class="far fa-eye"></i> 1.2k views</span>
+              </div>
+              <h3>
+                <a href="news-detail.php?id=1"
+                  >Tips Memilih Kost untuk Mahasiswa Baru</a
+                >
+              </h3>
+              <p class="article-excerpt">
+                Panduan lengkap bagi mahasiswa baru dalam memilih kost yang
+                nyaman dan sesuai budget di area Sidoarjo...
+              </p>
+              <a href="news-detail.php?id=1" class="read-more"
+                >Baca Selengkapnya <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </article>
+
+          <!-- Berita 2 -->
+          <article class="news-article">
+            <div class="article-image">
+              <img src="images/news2.jpg" alt="Area Baru Kost" />
+              <div class="article-category">Lokasi Baru</div>
+            </div>
+            <div class="article-content">
+              <div class="article-meta">
+                <span><i class="far fa-calendar-alt"></i> 10 Juli 2023</span>
+                <span><i class="far fa-eye"></i> 890 views</span>
+              </div>
+              <h3>
+                <a href="news-detail.php?id=2"
+                  >Area Baru Kost di Sidoarjo Selatan</a
+                >
+              </h3>
+              <p class="article-excerpt">
+                Temukan perkembangan terbaru kawasan kost di Sidoarjo Selatan
+                dengan fasilitas lengkap dan harga kompetitif...
+              </p>
+              <a href="news-detail.php?id=2" class="read-more"
+                >Baca Selengkapnya <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </article>
+
+          <!-- Berita 3 -->
+          <article class="news-article">
+            <div class="article-image">
+              <img src="images/news3.jpg" alt="Promo Kost" />
+              <div class="article-category">Promo</div>
+            </div>
+            <div class="article-content">
+              <div class="article-meta">
+                <span><i class="far fa-calendar-alt"></i> 5 Juli 2023</span>
+                <span><i class="far fa-eye"></i> 1.5k views</span>
+              </div>
+              <h3>
+                <a href="news-detail.php?id=3"
+                  >Promo Bulan Juli - Diskon 1 Bulan Sewa</a
+                >
+              </h3>
+              <p class="article-excerpt">
+                Manfaatkan promo khusus bulan Juli dengan diskon 1 bulan sewa
+                untuk pendaftaran di 10 kost pilihan kami...
+              </p>
+              <a href="news-detail.php?id=3" class="read-more"
+                >Baca Selengkapnya <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </article>
+
+          <!-- Berita 4 -->
+          <article class="news-article">
+            <div class="article-image">
+              <img src="images/news4.jpg" alt="Keamanan Kost" />
+              <div class="article-category">Tips</div>
+            </div>
+            <div class="article-content">
+              <div class="article-meta">
+                <span><i class="far fa-calendar-alt"></i> 28 Juni 2023</span>
+                <span><i class="far fa-eye"></i> 2.3k views</span>
+              </div>
+              <h3>
+                <a href="news-detail.php?id=4"
+                  >Tips Menjaga Keamanan di Lingkungan Kost</a
+                >
+              </h3>
+              <p class="article-excerpt">
+                Bagaimana menjaga keamanan pribadi dan barang berharga saat
+                tinggal di kost bersama dengan penghuni lain...
+              </p>
+              <a href="news-detail.php?id=4" class="read-more"
+                >Baca Selengkapnya <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </article>
+        </div>
+
+        <div class="pagination">
+          <a href="#" class="page-nav"><i class="fas fa-chevron-left"></i></a>
+          <a href="#" class="active">1</a>
+          <a href="#">2</a>
+          <a href="#">3</a>
+          <a href="#" class="page-nav"><i class="fas fa-chevron-right"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="newsletter">
+      <div class="container">
+        <h2>Berlangganan Newsletter Kami</h2>
+        <p>
+          Dapatkan informasi terbaru tentang promo, tips, dan berita seputar
+          kost di Sidoarjo langsung ke email Anda
+        </p>
+        <form>
+          <input type="email" placeholder="Alamat email Anda" />
+          <button type="submit" class="btn">Berlangganan</button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="footer-section">
+          <h3>Tentang Kami</h3>
+          <p>
+            KostSidoarjo membantu Anda menemukan tempat tinggal nyaman di
+            Sidoarjo sejak 2020.
+          </p>
+        </div>
+        <div class="footer-section">
+          <h3>Kontak</h3>
+          <p><i class="fas fa-envelope"></i> Email: info@kostsidoarjo.com</p>
+          <p><i class="fas fa-phone"></i> Telepon: (031) 1234567</p>
+        </div>
+        <div class="footer-section">
+          <h3>Follow Kami</h3>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2023 KostSidoarjo. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a
+      href="https://wa.me/6281234567890?text=Saya%20tertarik%20dengan%20kost%20di%20Sidoarjo"
+      class="whatsapp-float"
+      target="_blank"
+    >
+      <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Chatbot Button -->
+    <button class="chatbot-toggler">
+      <i class="fas fa-comments"></i>
+    </button>
+
+    <!-- Chatbot Container -->
+    <div class="chatbot-container">
+      <div class="chatbot-header">
+        <h3>KostBot</h3>
+        <button class="close-chatbot">&times;</button>
+      </div>
+      <div class="chatbot-messages" id="chatbot-messages">
+        <div class="bot-message">
+          Halo! Saya KostBot. Ada yang bisa saya bantu tentang kost di Sidoarjo?
+        </div>
+      </div>
+      <div class="chatbot-input">
+        <input
+          type="text"
+          id="user-input"
+          placeholder="Ketik pertanyaan Anda..."
+        />
+        <button id="send-message"><i class="fas fa-paper-plane"></i></button>
+      </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/chatbot.js"></script>
+  </body>
+</html>

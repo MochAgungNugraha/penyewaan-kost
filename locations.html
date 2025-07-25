@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lokasi Kost - Kost Sidoarjo</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <h1>KostSidoarjo</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="locations.html" class="active">Lokasi Kost</a></li>
+            <li><a href="news.html">Berita</a></li>
+            <li><a href="dashboard.html">Login</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="location-hero">
+      <div class="container">
+        <h2>Temukan Kost Ideal di Sidoarjo</h2>
+        <p>Lebih dari 100+ pilihan kost dengan berbagai fasilitas dan harga</p>
+        <div class="search-box">
+          <input
+            type="text"
+            placeholder="Cari berdasarkan lokasi, harga, atau fasilitas..."
+          />
+          <button><i class="fas fa-search"></i> Cari</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="location-filter">
+      <div class="container">
+        <div class="filter-options">
+          <div class="filter-group">
+            <label for="district"
+              ><i class="fas fa-map-marker-alt"></i> Kecamatan</label
+            >
+            <select id="district">
+              <option value="">Semua Kecamatan</option>
+              <option value="sidoarjo">Sidoarjo</option>
+              <option value="waru">Waru</option>
+              <option value="gedangan">Gedangan</option>
+              <option value="taman">Taman</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <label for="price"><i class="fas fa-tag"></i> Harga</label>
+            <select id="price">
+              <option value="">Semua Harga</option>
+              <option value="500-1000">&lt; Rp 1.000.000</option>
+              <option value="1000-1500">Rp 1.000.000 - 1.500.000</option>
+              <option value="1500-2000">Rp 1.500.000 - 2.000.000</option>
+              <option value="2000">&gt; Rp 2.000.000</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <label for="facility"><i class="fas fa-wifi"></i> Fasilitas</label>
+            <select id="facility">
+              <option value="">Semua Fasilitas</option>
+              <option value="ac">AC</option>
+              <option value="wifi">WiFi</option>
+              <option value="kamar-mandi">Kamar Mandi Dalam</option>
+              <option value="dapur">Dapur Bersama</option>
+            </select>
+          </div>
+          <button class="btn filter-btn">
+            <i class="fas fa-filter"></i> Filter
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="location-list">
+      <div class="container">
+        <div class="location-grid">
+          <!-- Kost 1 -->
+          <div class="location-detail">
+            <div class="location-badge">Populer</div>
+            <img src="images/kost1.jpg" alt="Kost Sidoarjo Pusat" />
+            <div class="location-info">
+              <h3>Kost Mawar - Sidoarjo Pusat</h3>
+              <div class="location-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <span>4.5 (32 reviews)</span>
+              </div>
+              <p>
+                <i class="fas fa-map-marker-alt"></i> Jl. Majapahit No. 123,
+                Sidoarjo
+              </p>
+              <p><i class="fas fa-bed"></i> Kamar tersedia: 5</p>
+              <div class="location-facilities">
+                <span><i class="fas fa-wifi"></i> WiFi</span>
+                <span><i class="fas fa-snowflake"></i> AC</span>
+                <span><i class="fas fa-bath"></i> Kamar Mandi</span>
+              </div>
+              <div class="price">
+                <p>Rp 1.500.000<span>/bulan</span></p>
+                <a href="checkout.php?id=1" class="btn">Pesan Sekarang</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Kost 2 -->
+          <div class="location-detail">
+            <div class="location-badge">Promo</div>
+            <img src="images/kost2.jpg" alt="Kost Waru" />
+            <div class="location-info">
+              <h3>Kost Melati - Waru</h3>
+              <div class="location-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <span>4.0 (18 reviews)</span>
+              </div>
+              <p>
+                <i class="fas fa-map-marker-alt"></i> Jl. Raya Waru No. 45, Waru
+              </p>
+              <p><i class="fas fa-bed"></i> Kamar tersedia: 3</p>
+              <div class="location-facilities">
+                <span><i class="fas fa-wifi"></i> WiFi</span>
+                <span><i class="fas fa-bath"></i> Kamar Mandi</span>
+                <span><i class="fas fa-utensils"></i> Dapur</span>
+              </div>
+              <div class="price">
+                <p>Rp 1.000.000<span>/bulan</span></p>
+                <a href="checkout.php?id=2" class="btn">Pesan Sekarang</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Kost 3 -->
+          <div class="location-detail">
+            <img src="images/kost3.jpg" alt="Kost Gedangan" />
+            <div class="location-info">
+              <h3>Kost Anggrek - Gedangan</h3>
+              <div class="location-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <span>5.0 (25 reviews)</span>
+              </div>
+              <p>
+                <i class="fas fa-map-marker-alt"></i> Jl. Raya Gedangan No. 78
+              </p>
+              <p><i class="fas fa-bed"></i> Kamar tersedia: 2</p>
+              <div class="location-facilities">
+                <span><i class="fas fa-wifi"></i> WiFi</span>
+                <span><i class="fas fa-snowflake"></i> AC</span>
+                <span><i class="fas fa-bath"></i> Kamar Mandi</span>
+                <span><i class="fas fa-car"></i> Parkir</span>
+              </div>
+              <div class="price">
+                <p>Rp 1.800.000<span>/bulan</span></p>
+                <a href="checkout.php?id=3" class="btn">Pesan Sekarang</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Kost 4 -->
+          <div class="location-detail">
+            <div class="location-badge">Baru</div>
+            <img src="images/kost4.jpg" alt="Kost Taman" />
+            <div class="location-info">
+              <h3>Kost Kenanga - Taman</h3>
+              <div class="location-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <span>4.0 (12 reviews)</span>
+              </div>
+              <p><i class="fas fa-map-marker-alt"></i> Jl. Raya Taman No. 56</p>
+              <p><i class="fas fa-bed"></i> Kamar tersedia: 4</p>
+              <div class="location-facilities">
+                <span><i class="fas fa-wifi"></i> WiFi</span>
+                <span><i class="fas fa-snowflake"></i> AC</span>
+                <span><i class="fas fa-bath"></i> Kamar Mandi</span>
+                <span><i class="fas fa-tv"></i> TV</span>
+              </div>
+              <div class="price">
+                <p>Rp 2.200.000<span>/bulan</span></p>
+                <a href="checkout.php?id=4" class="btn">Pesan Sekarang</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="pagination">
+          <a href="#" class="page-nav"><i class="fas fa-chevron-left"></i></a>
+          <a href="#" class="active">1</a>
+          <a href="#">2</a>
+          <a href="#">3</a>
+          <a href="#" class="page-nav"><i class="fas fa-chevron-right"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="location-cta">
+      <div class="container">
+        <h2>Tidak menemukan yang sesuai?</h2>
+        <p>Hubungi kami untuk membantu menemukan kost yang tepat untuk Anda</p>
+        <a href="#" class="btn btn-outline"
+          ><i class="fas fa-phone-alt"></i> Hubungi Kami</a
+        >
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="footer-section">
+          <h3>Tentang Kami</h3>
+          <p>
+            KostSidoarjo membantu Anda menemukan tempat tinggal nyaman di
+            Sidoarjo sejak 2020.
+          </p>
+        </div>
+        <div class="footer-section">
+          <h3>Kontak</h3>
+          <p><i class="fas fa-envelope"></i> Email: info@kostsidoarjo.com</p>
+          <p><i class="fas fa-phone"></i> Telepon: (031) 1234567</p>
+        </div>
+        <div class="footer-section">
+          <h3>Follow Kami</h3>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2023 KostSidoarjo. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a
+      href="https://wa.me/6281234567890?text=Saya%20tertarik%20dengan%20kost%20di%20Sidoarjo"
+      class="whatsapp-float"
+      target="_blank"
+    >
+      <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Chatbot Button -->
+    <button class="chatbot-toggler">
+      <i class="fas fa-comments"></i>
+    </button>
+
+    <!-- Chatbot Container -->
+    <div class="chatbot-container">
+      <div class="chatbot-header">
+        <h3>KostBot</h3>
+        <button class="close-chatbot">&times;</button>
+      </div>
+      <div class="chatbot-messages" id="chatbot-messages">
+        <div class="bot-message">
+          Halo! Saya KostBot. Ada yang bisa saya bantu tentang kost di Sidoarjo?
+        </div>
+      </div>
+      <div class="chatbot-input">
+        <input
+          type="text"
+          id="user-input"
+          placeholder="Ketik pertanyaan Anda..."
+        />
+        <button id="send-message"><i class="fas fa-paper-plane"></i></button>
+      </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/chatbot.js"></script>
+  </body>
+</html>

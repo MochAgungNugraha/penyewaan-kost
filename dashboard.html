@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - Kost Sidoarjo</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <h1>KostSidoarjo</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="locations.html">Lokasi Kost</a></li>
+            <li><a href="news.html">Berita</a></li>
+            <li><a href="dashboard.html" class="active">Login</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="login-hero">
+      <div class="container">
+        <div class="login-container">
+          <div class="login-form">
+            <h2>Masuk ke Akun Anda</h2>
+            <p>Silakan masuk untuk mengelola pemesanan dan favorit Anda</p>
+
+            <form action="process_login.php" method="POST">
+              <div class="form-group">
+                <label for="email">Alamat Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Masukkan email Anda"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                  placeholder="Masukkan password Anda"
+                  required
+                />
+              </div>
+              <div class="form-options">
+                <div class="remember-me">
+                  <input type="checkbox" id="remember" name="remember" />
+                  <label for="remember">Ingat saya</label>
+                </div>
+                <a href="forgot-password.php" class="forgot-password"
+                  >Lupa password?</a
+                >
+              </div>
+              <button type="submit" class="btn btn-login">Masuk</button>
+            </form>
+
+            <div class="social-login">
+              <p>Atau masuk dengan</p>
+              <div class="social-buttons">
+                <a href="#" class="btn-social facebook"
+                  ><i class="fab fa-facebook-f"></i> Facebook</a
+                >
+                <a href="#" class="btn-social google"
+                  ><i class="fab fa-google"></i> Google</a
+                >
+              </div>
+            </div>
+
+            <div class="register-link">
+              Belum punya akun? <a href="register.php">Daftar sekarang</a>
+            </div>
+          </div>
+
+          <div class="login-benefits">
+            <h3>Keuntungan memiliki akun:</h3>
+            <ul>
+              <li>
+                <i class="fas fa-check-circle"></i> Simpan daftar kost favorit
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Proses pemesanan lebih cepat
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Dapatkan notifikasi promo
+                khusus
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Kelola pembayaran dengan
+                mudah
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Akses ke riwayat transaksi
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="footer-section">
+          <h3>Tentang Kami</h3>
+          <p>
+            KostSidoarjo membantu Anda menemukan tempat tinggal nyaman di
+            Sidoarjo sejak 2020.
+          </p>
+        </div>
+        <div class="footer-section">
+          <h3>Kontak</h3>
+          <p><i class="fas fa-envelope"></i> Email: info@kostsidoarjo.com</p>
+          <p><i class="fas fa-phone"></i> Telepon: (031) 1234567</p>
+        </div>
+        <div class="footer-section">
+          <h3>Follow Kami</h3>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2023 KostSidoarjo. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a
+      href="https://wa.me/6281234567890?text=Saya%20tertarik%20dengan%20kost%20di%20Sidoarjo"
+      class="whatsapp-float"
+      target="_blank"
+    >
+      <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Chatbot Button -->
+    <button class="chatbot-toggler">
+      <i class="fas fa-comments"></i>
+    </button>
+
+    <!-- Chatbot Container -->
+    <div class="chatbot-container">
+      <div class="chatbot-header">
+        <h3>KostBot</h3>
+        <button class="close-chatbot">&times;</button>
+      </div>
+      <div class="chatbot-messages" id="chatbot-messages">
+        <div class="bot-message">
+          Halo! Saya KostBot. Ada yang bisa saya bantu tentang kost di Sidoarjo?
+        </div>
+      </div>
+      <div class="chatbot-input">
+        <input
+          type="text"
+          id="user-input"
+          placeholder="Ketik pertanyaan Anda..."
+        />
+        <button id="send-message"><i class="fas fa-paper-plane"></i></button>
+      </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/chatbot.js"></script>
+  </body>
+</html>

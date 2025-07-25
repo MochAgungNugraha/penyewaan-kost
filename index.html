@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kost Sidoarjo - Temukan Kost Nyaman di Sidoarjo</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <h1>IndraJaya</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="locations.html">Lokasi Kost</a></li>
+            <li><a href="news.html">Berita</a></li>
+            <li><a href="dashboard.html">Login</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="container">
+        <h2>Temukan Kost Nyaman di Sidoarjo</h2>
+        <p>
+          Lebih dari 10 pilihan kost dengan fasilitas lengkap dan harga
+          terjangkau
+        </p>
+        <a href="locations.html" class="btn">Cari Kost Sekarang</a>
+      </div>
+    </section>
+
+    <section class="features">
+      <div class="container">
+        <div class="feature-box">
+          <i class="fas fa-map-marker-alt"></i>
+          <h3>Lokasi Strategis</h3>
+          <p>Kost dekat kampus, perkantoran, dan pusat kota</p>
+        </div>
+        <div class="feature-box">
+          <i class="fas fa-wifi"></i>
+          <h3>Fasilitas Lengkap</h3>
+          <p>
+            WiFi, AC, kamar mandi dalam, dapur bersama dan ada juga dapur
+            pribadi
+          </p>
+        </div>
+        <div class="feature-box">
+          <i class="fas fa-lock"></i>
+          <h3>Keamanan Terjamin</h3>
+          <p>24 jam penjagaan dan CCTV</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="popular-locations">
+      <div class="container">
+        <h2>Lokasi Populer</h2>
+        <div class="location-grid">
+          <div class="location-card">
+            <img src="images/sidoarjo1.jpg" alt="Kost Sidoarjo Pusat" />
+            <h3>Sidoarjo Pusat</h3>
+            <p>Mulai dari Rp 1.200.000/bulan</p>
+          </div>
+          <div class="location-card">
+            <img src="images/waru.jpg" alt="Kost Waru" />
+            <h3>Waru</h3>
+            <p>Mulai dari Rp 900.000/bulan</p>
+          </div>
+          <div class="location-card">
+            <img src="images/gedangan.jpg" alt="Kost Gedangan" />
+            <h3>Gedangan</h3>
+            <p>Mulai dari Rp 1.000.000/bulan</p>
+          </div>
+        </div>
+        <a href="locations.html" class="btn">Lihat Semua Lokasi</a>
+      </div>
+    </section>
+
+    <section class="news-preview">
+      <div class="container">
+        <h2>Berita Terkini</h2>
+        <div class="news-grid">
+          <div class="news-card">
+            <img src="images/news1.jpg" alt="Berita Kost" />
+            <h3>Tips Memilih Kost untuk Mahasiswa Baru</h3>
+            <p>5 menit yang lalu</p>
+            <a href="news.php#news1">Baca Selengkapnya</a>
+          </div>
+          <div class="news-card">
+            <img src="images/news2.jpg" alt="Berita Kost" />
+            <h3>Area Baru Kost di Sidoarjo Selatan</h3>
+            <p>2 hari yang lalu</p>
+            <a href="news.php#news2">Baca Selengkapnya</a>
+          </div>
+        </div>
+        <a href="news.html" class="btn">Lihat Semua Berita</a>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="footer-section">
+          <h3>Tentang Kami</h3>
+          <p>
+            KostSidoarjo membantu Anda menemukan tempat tinggal nyaman di
+            Sidoarjo sejak 2020.
+          </p>
+        </div>
+        <div class="footer-section">
+          <h3>Kontak</h3>
+          <p>Email: info@kostsidoarjo.com</p>
+          <p>Telepon: (031) 1234567</p>
+        </div>
+        <div class="footer-section">
+          <h3>Follow Kami</h3>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-x"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2023 KostSidoarjo. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a
+      href="https://wa.me/6287856663867?text=Saya%20tertarik%20dengan%20kost%20di%20Sidoarjo"
+      class="whatsapp-float"
+      target="_blank"
+    >
+      <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Chatbot Button -->
+    <button class="chatbot-toggler">
+      <i class="fas fa-comments"></i>
+    </button>
+
+    <!-- Chatbot Container -->
+    <div class="chatbot-container">
+      <div class="chatbot-header">
+        <h3>KostBot</h3>
+        <button class="close-chatbot">&times;</button>
+      </div>
+      <div class="chatbot-messages" id="chatbot-messages">
+        <div class="bot-message">
+          Halo! Saya KostBot. Ada yang bisa saya bantu tentang kost di Sidoarjo?
+        </div>
+      </div>
+      <div class="chatbot-input">
+        <input
+          type="text"
+          id="user-input"
+          placeholder="Ketik pertanyaan Anda..."
+        />
+        <button id="send-message"><i class="fas fa-paper-plane"></i></button>
+      </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/chatbot.js"></script>
+  </body>
+</html>
