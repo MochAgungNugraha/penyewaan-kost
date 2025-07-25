@@ -1,2 +1,0 @@
-# penyewaan-kost
-kurang php
